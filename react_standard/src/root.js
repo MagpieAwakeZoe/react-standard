@@ -7,16 +7,18 @@ import React, { render } from 'react'
 import Header from './components/header/header'
 import MainContent from './components/contents/mainContent/mainContent'
 import Comment from './components/contents/comment/comment'
-let Root = React.createClass({
+// import Rs from './routes/router/router'
+let App = React.createClass({
     render(){
         return (
             <div>
                 <Header/>
                 <MainContent/>
                 <Comment/>
+                {/*<Rs/>*/}
             </div>
         );
     }
 });
 
-export default Root;
+export default App;

@@ -3,25 +3,26 @@
  */
 import React from 'react'
 import './header.less'
+import { Link } from 'react-router'
 let Header = React.createClass({
     render(){
         return(
            <div className="container0">
                 <div className="container">
                     <div className="block block1">
-                        <p className="font">首页</p>
+                        <p className="font"><Link to="/">首页</Link></p>
                     </div>
                     <div className="block block2">
-                        <p className="font">评论</p>
+                        <p className="font"><Link to="/list2">评论</Link></p>
                     </div>
                     <div className="block block3">
-                        <p className="font">查找目录</p>
+                        <p className="font"><Link to="/list3">查找目录</Link></p>
                     </div>
                     <div className="block block4">
-                        <p className="font">新人必读</p>
+                        <p className="font"><Link to="/list4">新人必读</Link></p>
                     </div>
                     <div className="block block5">
-                        <p className="font">问题</p>
+                        <p className="font"><Link to="/list5">问题</Link></p>
                     </div>
                 </div>
            </div>
